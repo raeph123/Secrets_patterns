@@ -1,0 +1,67 @@
+((my|o|i)sql|sqlcmd).*[-/]p\s?[^\s]+
+\b(sqlplus|conn(ect)?)\s+\w+/[^\s]+
+p(scp|sftp|uttytel|link).*-pw
+\s?ftp\s+.*-[sup]
+\bnet(\.exe)?\s+use.*/user:[^\s]+
+(s?ftps?|https?|scp)://.*@
+((?i)jdbc):.*(@|/)+
+\bnet(\.exe)?\s+user.*/add
+\bnet(\.exe)?\s+user\s+\w+\s+[^\s]{8,}
+\broot:
+Data Source=
+BEGIN[A-Za-z ]* PRIVATE KEY
+\b((?i)ssh|scp|sftp)\b.*-i
+((?i)psexec).*-p
+smbclient
+\{xor\}
+enable\s((?i)password|secret)\s
+dtexec.*/decrypt
+reg add
+\b[-/]{1,2}(pass(wor[dt]|wd)?|pwd)[\s:="><].+
+((?i)passwor[dt]|passphrase|pwd)\s?[:=].+
+((?i)passwor[dt]|passphrase|pwd)\s?["><\\')].+
+((?i)passwor[dt]|passphrase|pwd).*[:="><\\')].+
+([a-z0-9.-_]{1,15}:[a-zA-Z0-9./]{13}($|:))
+(\$(1|2a|2y|5|6|apr1)\$[a-zA-Z0-9./]+\$[a-zA-Z0-9./]+)|(\$P\$[a-zA-Z0-9./]{31})
+((?i)kennwort|clave|senha|mot de passe|chiave)\s?[:="><\\')].+
+(CREATE|ALTER) USER.*IDENTIFIED BY
+SCHTASKS.*((/RP|/P)\s+).*
+rftscmd.*-s.*
+((define|export|set)\s+|(\$|^(\s*)?))[^\s]*pw\s*[=:]\s*[^\s]+
+<\w+>[pP](asswor[dt]|wd|assphrase)</\w+>(\r\n?|\n)<\w+>.+</\w+>
+(mysql|mssql|pg|db2|odbc|ldap|ssh2)_connect\(\s?[^\s]+\s?,\s?[^\s]+\s?,\s?[^\s]+
+netdom\b.+/(p[do]|password[do]):?[^\*]+
+options\.(security\.history|useradmin)\.\w+=.+
+((?i)pw)\s?[:=].+\w+
+sapstartsrv(.exe)?.*-P\s?[^\s]+
+((?i)execute|exec)\s+sp_addlogin\s?[^\s]+
+login.*IDENTIFIED BY
+PuTTY-User-Key-File
+DcEwo5/Jy
+ConvertTo-SecureString
+AIza[0-9A-Za-z-_]{35}
+ya29\.[0-9A-Za-z\-_]+
+AKIA[0-9A-Z]{16}
+amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}
+s3\.amazonaws\.com[/]+|[a-zA-Z0-9_-]*\.s3\.amazonaws.com
+EAACEdEose0cBA[0-9A-Za-z]+
+basic\s+[a-zA-Z0-9=:_\+/-]+
+((?i)bearer)\s*[a-zA-Z0-9_\-\.=:_\+/]+
+api(?:key)*[>:=\s]*\s+[a-zA-Z0-9_\-]+
+key-[0-9a-zA-Z]{32}
+access_token\$production\$[0-9a-z]{16}\$[0-9a-f]{32}
+sq0csp-[ 0-9A-Za-z\-_]{43}
+sqOatp-[0-9A-Za-z\-_]{22}
+sk_live_[0-9a-zA-Z]{24}
+rk_live_[0-9a-zA-Z]{24}
+[a-zA-Z0-9_-]*:[a-zA-Z0-9_\\-]+@github\.com*
+["'=\ :><]+ey[A-Za-z0-9_/+-]*\.[A-Za-z0-9._/+-]*
+clientSecret
+client-secret
+client_secret
+AccessKey
+SecretAccessKey
+bucket
+bucketName
+dbpass
+db_pas
