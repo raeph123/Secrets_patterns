@@ -7,3 +7,5 @@ I compiled some old regexes for sensitive files, removed some that are highly li
 Usage:
 
 rg -SUf ~/projects/patterns/patterns your_target_folder
+
+this is compiled from different sources and has grown over a lot of years. Some adjustments have been made to work with ripgrep... However, it is far from perfect, so use with care and feel free to enhance.
